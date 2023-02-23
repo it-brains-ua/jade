@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    case name
+        when "Bob"
+            p Hi Bob!
+        when "Alice"
+            p Howdy Alice!
+        default
+            p Hello #{name}!

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    select
+        each book, i in books
+            option(value=i) Book #{book}
+        ul
+    for book in books1
+        li= book
+    else
+        li sorry, no books!
